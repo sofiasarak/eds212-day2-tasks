@@ -10,4 +10,30 @@ Loading the packages I need!
 library(tidyverse)
 library(palmerpenguins)
 ```
+This is what you put into the console when you're setting up github!
+usethis::use_git()
+^selection the affirmation selection after this one
+usegit::use_github()
+
+Finding the slope of example 1!
+```{r}
+fx <- expression(x^2)
+dx_df <- D(fx,"x")
+dx_df
+
+x <- 3
+eval(expr=dx_df)
+```
+
+Finding the slope of example 2!
+```{r}
+pa <- expression(2* (3*a+2)^4 - 5)
+da_dp <- D(pa, "a")
+da_dp
+
+a <- 1.2
+eval(expr=da_dp)
+```
+
+
 
