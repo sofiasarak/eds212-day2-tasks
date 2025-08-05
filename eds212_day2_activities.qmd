@@ -1,0 +1,13 @@
+---
+title: "Day 2 Practice"
+format: html
+editor: visual
+---
+
+Loading the packages I need!
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
