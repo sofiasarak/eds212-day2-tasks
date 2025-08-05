@@ -36,4 +36,20 @@ eval(expr=da_dp)
 ```
 
 
+Making another penguin plot!
+
+```{r}
+library(tidyverse)
+ggplot(data=penguins, aes(x=bill_length_mm,y=bill_depth_mm)) + 
+  geom_point(aes(color=species)) +
+  labs(title="Palmer Penguins Bill Length vs Bill Depth", x="Bill Length (mm)", y="Bill Depth(mm)")
+```
+Making a jitter plot with the same data 
+
+```{r}
+library(tidyverse)
+ggplot(data=penguins, aes(x=species, y=flipper_length_mm)) +
+  geom_jitter() + 
+  labs(title="Palmer Penguins Species vs Flipper Length", x="Species Name", y="Flipper Length (mm)")
+```
 
